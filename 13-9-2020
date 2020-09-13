@@ -1,0 +1,16 @@
+using System;
+					
+public class Program
+{
+	int number = 1;
+	double myDouble = 1.4;
+	string name = "Adam";
+	
+	public void Main()
+	{
+		Console.WriteLine("Введите число: ");
+       	number = Int32.Parse(Console.ReadLine());
+		myDouble = number;
+		Console.Write(name + " " + myDouble);  
+	}
+}
