@@ -1,0 +1,55 @@
+using System;					
+class Program
+{
+ static void Main(string[]args)
+{
+	while(true)
+	{
+		Console.Clear();
+	double firstValua, secondValua;
+	string action;
+		try 
+		{
+	
+Console.WriteLine("Введите число 1");
+	firstValua = double.Parse(Console.ReadLine());
+
+Console.WriteLine("Введите число 2");
+	firstValua = double.Parse(Console.ReadLine());
+}
+		catch (Exception)
+		{ 
+			Console.WriteLine("Не удалось преобразовать строку в число! ");
+			Console.ReadLine();
+			continue;
+		}
+			
+     Console.WriteLine("Выберите операцию: '+' '-' '*' '/' ");
+	action = Console.ReadLine();
+	switch(action)
+	{ 
+		case "+":
+			Console.WriteLine("firstValua + secondValua");
+			break;
+			case "-":
+			Console.WriteLine("firstValua + secondValua");
+			break;
+			case "*":
+			Console.WriteLine("firstValua + secondValua");
+			break;
+			case "/":
+			Console.WriteLine("firstValua + secondValua");
+			break;
+			if (secondValua == 0)
+				Console.WriteLine(0);
+			else 
+				Console.WriteLine(firstValua / secondValua);
+			break;
+		default:
+			Console.WriteLine("Ошибка! Неизвестное действие");
+			break;
+
+	  }
+    }
+  }
+}
